@@ -10,6 +10,22 @@
     <div>
         <embed src="cartao.pdf" width="800px" height="2100px" />
   </body>
+  <script>
+    function isMobile() {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    
+        // Windows Phone must come first because its UA also contains "Android"
+        if ((/windows phone/i.test(userAgent)) || (/android/i.test(userAgent)) || (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream)){
+            return true
+        }
+    
+        return false;
+    }
+
+    if(isMobile()){
+        window.location.replace("https://drive.google.com/file/d/1tnLHN0kzkIiDmWz_cz3HBapcxy2j9liq/view?usp=sharing");
+    }
+  </script>
   <style>
     #yourcontainer {
       height: 98vh;
