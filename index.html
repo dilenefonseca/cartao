@@ -7,10 +7,26 @@
     <title>Dra. Dilene da Gama Fonseca</title>
   </head>
   <body>
-    <object
-      data="cartao.pdf"
-      type="application/pdf"
-      style="min-height: 100vh; width: 100%"
-    ></object>
+    <div>
+      <iframe
+        id="yourcontainer"
+        title="PDF Viewer"
+        aria-label="PDF Viewer"
+        scrolling="no"
+        src="cartao.pdf"
+      ></iframe>
+    </div>
+    <!-- <iframe
+      src="http://docs.google.com/viewer?url=[https://drive.google.com/file/d/1tnLHN0kzkIiDmWz_cz3HBapcxy2j9liq/view?usp=sharing.pdf]&embedded=true"
+      width="600"
+      height="780"
+      style="border: none"
+    ></iframe> -->
   </body>
+  <style>
+    #yourcontainer {
+      height: 98vh;
+      width: 100vh;
+    }
+  </style>
 </html>
