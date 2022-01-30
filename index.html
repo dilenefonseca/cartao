@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dra. Dilene da Gama Fonseca</title>
   </head>
-  <body>
+  <body onload="shouldRedirect();">
     <div>
         <embed src="cartao.pdf" width="800px" height="2100px" />
   </body>
@@ -21,9 +21,11 @@
     
         return false;
     }
-
-    if(isMobile()){
-        window.location.replace("https://drive.google.com/file/d/1tnLHN0kzkIiDmWz_cz3HBapcxy2j9liq/view?usp=sharing");
+    function shouldRedirect(){
+      
+      if(isMobile()){
+          window.location.replace("https://drive.google.com/file/d/1tnLHN0kzkIiDmWz_cz3HBapcxy2j9liq/view?usp=sharing");
+      }
     }
   </script>
   <style>
